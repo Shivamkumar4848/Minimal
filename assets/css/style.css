@@ -1,3 +1,8 @@
+:root{
+    --color-background: #eeeeee;
+    --color-primary: yellow;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +10,20 @@
 }
 
 body{
-    background-image: url('./assets/img/bg1.jpg');
+    background-image: url("bg2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    background: var(--color-background);
+}
+
+nav{
+    margin: auto;
 }
 
 nav ul{
@@ -23,5 +39,5 @@ nav ul li a{
     margin-left: 5px;
     padding: 10px;
     display: block;
-    float: left;
+    float: right;
 }
