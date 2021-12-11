@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
+
 :root{
     --color-background: #eeeeee;
     --color-primary: black;
-    --color-secondary: yellow;
+    --color-secondary: red;
 }
 
 *{
@@ -15,8 +18,8 @@ body{
 }
 
 .container {
-    border: 20px solid white;
-    background-image: url("../img/bg6.jpg");
+    border: 10px solid whitesmoke;
+    background-image: url("../img/red.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,3 +27,21 @@ body{
     min-height: 100vh;
     box-shadow: 10px 8px 9px black;
 } 
+
+.header {
+    width: 100%;
+    background-color: var(--color-primary);
+    opacity: 0.8;
+}
+
+.logo{
+    padding: 5px 10px;
+    color: var(--color-background);
+    font-family: 'Bilbo', cursive;
+    font-size:20px;
+}
+
+.logo:hover{
+    color: var(--color-secondary);
+    transition: 0.5s;
+}
