@@ -1,6 +1,7 @@
 :root{
     --color-background: #eeeeee;
-    --color-primary: yellow;
+    --color-primary: black;
+    --color-secondary: yellow;
 }
 
 *{
@@ -10,34 +11,16 @@
 }
 
 body{
-    background-image: url("bg2.jpg");
+    background-color: var(--color-primary);
+}
+
+.container {
+    border: 20px solid white;
+    background-image: url("../img/bg6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-
-header{
-    width: 100%;
-    background: var(--color-background);
-}
-
-nav{
-    margin: auto;
-}
-
-nav ul{
-    display: flex;
-}
-
-nav ul li{
-    list-style-type: none;
-}
-
-nav ul li a{
-    text-decoration: none;
-    margin-left: 5px;
-    padding: 10px;
-    display: block;
-    float: right;
-}
+    min-height: 100vh;
+    box-shadow: 10px 8px 9px black;
+} 
