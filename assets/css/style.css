@@ -30,18 +30,40 @@ body{
 
 .header {
     width: 100%;
-    background-color: var(--color-primary);
-    opacity: 0.8;
+    padding: 5px 10px;
+    display: flex;
+    background-color: none;
+    font-family: 'Bilbo', cursive;
+    font-size: 20px;
 }
 
 .logo{
-    padding: 5px 10px;
     color: var(--color-background);
-    font-family: 'Bilbo', cursive;
-    font-size:20px;
 }
 
 .logo:hover{
-    color: var(--color-secondary);
+    color: var(--color-primary);
     transition: 0.5s;
+}
+
+.main{
+    position: absolute;
+    right: 15%;
+    top: 40%;
+}
+
+.navbar{
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--color-background);
+    padding: 20px;
+}
+
+.main h1 {
+    color: var(--color-background);
 }
