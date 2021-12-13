@@ -3,23 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 
-:root{
-    --color-background: #eeeeee;
-    --color-primary: black;
-    --color-secondary: red;
+:root {
+    --color-background: #FBF5F3;
+    --color-primary: #000022;
+    --color-secondary: #C42847;
+    --color-ocouryellow: #E28413;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--color-primary);
 }
 
@@ -30,7 +31,7 @@ body{
     background-position: center;
     min-height: 100vh;
     box-shadow: 10px 8px 9px black;
-} 
+}
 
 .header {
     width: 100%;
@@ -41,78 +42,101 @@ body{
     font-size: 30px;
 }
 
-.logo{
-    color: var(--color-primary);
+.logo {
+    color: var(--color-secondary);
     cursor: pointer;
 }
 
-.logo:hover{
-    color: var(--color-background);
+.logo:hover {
+    color: var(--color-primary);
     transition: 0.3s;
 }
 
-.navbar{
+.navbar {
     position: absolute;
     right: 0;
 }
 
-.nav{
+.nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
     height: 36px;
 }
 
-.nav li{
+.nav li {
     float: left;
     justify-content: center;
     margin-right: 10px;
 }
 
-.nav li a{
-    display:block;
+.nav li a {
+    display: inline-block;
     padding: 20px;
-    color:var(--color-primary);
-    text-decoration:none;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav li a:hover{
-    color: var(--color-background);
+    color: var(--color-secondary);
+    transition: transform 0.3s ease-in-out;
 }
 
-.contain{
+.nav li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px var(--color-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav li a:hover:after {
+    transform: scaleX(1);
+}
+
+.left:after {
+    transform-origin: 0% 50%;
+}
+
+.contain {
     position: absolute;
     bottom: 0;
     left: 0;
     margin: 0 0 20px 20px;
 }
 
-.contain h1{
+.contain h1 {
     font-size: 60px;
     font-family: 'Rajdhani', sans-serif;
     width: 50%;
 }
 
-.contain span{
+.contain span {
     font-size: 20px;
     font-family: 'Shadows Into Light', cursive;
+    color: var(--color-secondary);
     font-weight: bold;
 }
 
-#arrow{
+.arrow {
     position: absolute;
     bottom: 0;
     left: 50%;
     margin: 10px;
 }
 
-#arrow img{
+.arrow img {
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-#container {
-    background-image: url("../img/1 (9).jpg");
+#container1 {
+    background-image: url("../img/1 (22).jpg");
     background-attachment: fixed;
+}
+
+#container2 {
+    background-image: url("../img/1 (23).jpg");
 }
