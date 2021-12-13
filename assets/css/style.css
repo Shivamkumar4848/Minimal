@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 
 :root{
@@ -14,15 +15,18 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--color-primary);
 }
 
 .container {
-    background-image: url("../img/1 (15).jpg");
+    background-image: url("../img/1 (19).jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
     box-shadow: 10px 8px 9px black;
@@ -39,11 +43,41 @@ body{
 
 .logo{
     color: var(--color-primary);
+    cursor: pointer;
 }
 
 .logo:hover{
-    color: var(--color-secondary);
+    color: var(--color-background);
     transition: 0.3s;
+}
+
+.navbar{
+    position: absolute;
+    right: 0;
+}
+
+.nav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 36px;
+}
+
+.nav li{
+    float: left;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.nav li a{
+    display:block;
+    padding: 20px;
+    color:var(--color-primary);
+    text-decoration:none;
+}
+
+.nav li a:hover{
+    color: var(--color-background);
 }
 
 .contain{
@@ -61,6 +95,24 @@ body{
 
 .contain span{
     font-size: 20px;
-    font-family: 'Bilbo', cursive;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
+}
+
+#arrow{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 10px;
+}
+
+#arrow img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#container {
+    background-image: url("../img/1 (9).jpg");
+    background-attachment: fixed;
 }
